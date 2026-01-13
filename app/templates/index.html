@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Cloud DevOps Project</title>
-</head>
-<body>
-    <h1>Welcome to Cloud DevOps Project</h1>
-    <p>Application running on AWS EC2 using Flask</p>
-</body>
-</html>
+<h1>Users List</h1>
+
+<ul>
+{% for user in users %}
+  <li>{{ user[1] }} - {{ user[2] }}</li>
+{% endfor %}
+</ul>
+
